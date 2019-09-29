@@ -1,20 +1,5 @@
 INDEX VERSION 1.127+C:\Users\åIñÿ çã\Desktop\jishu\kuriki\javarenshu\.metadata\.plugins\org.eclipse.jdt.core
-4149631661.index
-1098492112.index
-162856151.index
-1856852588.index
+803188810.index
+2651742271.index
+1089027725.index
 3839692037.index
-936815498.index
-3735670909.index
-900929404.index
-2290827517.index
-4040869570.index
-2103356355.index
-2326218549.index
-2999013978.index
-4283658722.index
-1877066311.index
-1229086479.index
-362544066.index
-23045636.index
-1842731127.index
