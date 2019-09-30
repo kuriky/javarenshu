@@ -1,0 +1,13 @@
+
+public class Hero02 {
+	Hero02(String name){
+		this.hp = 100;
+		this.name = name;
+	}
+
+	Hero02(){
+		this.hp = 100;
+		this.name ="ダミー";
+	}
+
+}

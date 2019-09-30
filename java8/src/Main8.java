@@ -3,21 +3,30 @@ public class Main8 {
 		Sword s = new Sword();
 		s.name ="炎の剣";
 		s.damage = 10;
-		
-		Hero h=new Hero();
-		h.name="ミナト";
-		h.hp=100;
-		h.sword = s;
-		System.out.println("現在の武器は"+ h.sword.name);
-		
+
+		Hero h1=new Hero();
+		System.out.println(h1.hp);
+		System.out.println(h1.name);
+		h1.sword = s;
+		System.out.println("現在の武器は"+ h1.sword.name);
+
+		Hero h2 = new Hero();
+		h2.hp = 100;
+
 		Tue t = new Tue();
 		t.name="祈りの杖";
 		t.damage = 3;
 
-		Cleric c=new Cleric();
-		c.name="クレサン";
-		c.tue = t;
-		System.out.println("現在の武器は"+ c.tue.name);
+		Cleric c1=new Cleric();
+		c1.name="クレサン";
+		c1.tue = t;
+		System.out.println("現在の武器は"+ c1.tue.name);
+
+		Wizard w =new Wizard();
+		w.name="スガワラ";
+		w.hp = 50;
+		w.heal(h1); //ミナトを回復させる(HP:100→110)
+		w.heal(h2); //アサカを回復させる(HP:100→110)
 
 		Matango m1 = new Matango();
 		m1.hp = 50;
@@ -28,11 +37,11 @@ public class Main8 {
 		m2.suffix = '8';
 
 		//冒険の始まり
-		c.selfAid();
-		h.slip();
+		c1.selfAid();
+		h1.slip();
 		m1.run();
 		m2.run();
-		h.run();
-		c.run();
+		h1.run();
+		c1.run();
 	}
 }
