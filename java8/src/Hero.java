@@ -1,6 +1,6 @@
 
 public class Hero {
-	String name;
+	String name = "ミナト";
 	int hp;
 	Sword sword;
 

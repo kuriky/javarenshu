@@ -1,0 +1,25 @@
+
+public class Main {
+	public static void main(String[]args){
+		Hero02.setRandomMoney();
+		System.out.println(Hero02.money);
+		Hero02 h1 = new Hero02();
+		System.out.println(h1.money);
+
+		static final int MAX_HP =  50;
+		static final int MAX_MP = 10;
+
+		public Cleric02(String name, int hp,int mp){
+			this.name = name;
+			this.hp = hp;
+			this.mp = mp;
+		}
+		public Cleric02(String name, int hp){
+			this(name, hp, Cleric02.MAX_MP);
+		}
+		public Cleric02(String name){
+			this(name, Cleric02.MAX_HP);
+		}
+	}
+
+}

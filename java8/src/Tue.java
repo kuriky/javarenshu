@@ -1,5 +1,5 @@
 
 public class Tue {
-	String name;
+	static String name;
 	int damage;
 }

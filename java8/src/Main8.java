@@ -14,13 +14,12 @@ public class Main8 {
 		h2.hp = 100;
 
 		Tue t = new Tue();
-		t.name="祈りの杖";
+		Tue.name="祈りの杖";
 		t.damage = 3;
 
-		Cleric c1=new Cleric();
-		c1.name="クレサン";
-		c1.tue = t;
-		System.out.println("現在の武器は"+ c1.tue.name);
+		Cleric c1 = new Cleric("クレサン", 80, 10);
+
+		System.out.println("現在の武器は"+Tue.name);
 
 		Wizard w =new Wizard();
 		w.name="スガワラ";
@@ -39,6 +38,7 @@ public class Main8 {
 		//冒険の始まり
 		c1.selfAid();
 		h1.slip();
+		w.heal(h1);
 		m1.run();
 		m2.run();
 		h1.run();
